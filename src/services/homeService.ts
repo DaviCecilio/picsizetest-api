@@ -7,16 +7,20 @@ export const simulateLoan = async (req: Request, resp: Response) => {
     try {
         const { user, loan } = req.body
 
+        if (loan.valueRequired < 50000 || loan.month_quant > 360)
+            return resp.status(404).json('Incorrect Infos')
+
         const verifyUser = await findUsers(user.cpf)
 
         let userId: any = ''
-        verifyUser ? (userId = verifyUser) : (userId = await createUser(user))
+
+        if (verifyUser) userId = verifyUser
+        else userId = await createUser(user)
 
         const loanDetail: any = await createLoan({ id: userId, uf: user.uf }, loan)
 
         return resp.status(200).json(loanDetail)
     } catch (err) {
-        console.log('Error ', err.message)
         return resp.status(400).send()
     }
 }
@@ -29,7 +33,6 @@ export const requestedLoan = async (req: Request, resp: Response) => {
 
         return resp.status(200).json(loanAlter)
     } catch (err) {
-        console.log('Error ', err.message)
         return resp.status(400).send()
     }
 }

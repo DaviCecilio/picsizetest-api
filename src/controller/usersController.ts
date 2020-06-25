@@ -1,6 +1,6 @@
 import { getRepository } from 'typeorm'
-import Users from '../entity/users'
 import { Request, Response } from 'express'
+import Users from '../entity/users'
 
 export const getUsers = async (req: Request, resp: Response) => {
     const users = await getRepository(Users).find()
