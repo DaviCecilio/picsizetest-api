@@ -52,12 +52,12 @@ O teste consiste em criar uma Web Application para simulação de empréstimo pa
 
 <h3>Documentação API: POSTMAN</h3>
 <br/>
-<div align="center">
+
 <a href="https://documenter.getpostman.com/view/8417676/SzzrYuGv?version=latest" target="_blank">
-<img src="https://img.shields.io/badge/POSTMAN-click%20here-orange?style=for-the-badge&logo=appveyor" alt="Go to website">
+<img src="https://img.shields.io/badge/POSTMAN-click%20here-orange?style=for-the-badge&logo=appveyor" alt="Go to website"/>
 </a>
-<div>
-</div>
+</div
+
 <br/>
 
 ## :rocket: Tecnologias
