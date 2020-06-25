@@ -34,7 +34,7 @@
     },
     "scripts": {
         "dev": "nodemon src/index.ts",
-        "start": "node build/index.js",
+        "start": "node index.js",
         "build": "tsc"
     }
 }
