@@ -1,6 +1,6 @@
 <div align="center">
 <a href="https://www.picsize.com.br/" target="_blank">
-    <img src="https://www.picsize.com.br/static/images/new-logo.png" width="250px"/>
+    <img src="https://d2klh4xxb27qur.cloudfront.net/converted/logo.webp" width="250px"/>
     </a>
 </div>
 <h2 align="center">
